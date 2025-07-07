@@ -2,202 +2,85 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <title>Promerica Beneficios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beneficios Promerica Costa Rica</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      padding: 0 1rem;
-    }
-    header h1 {
-      font-size: 3rem;
-      max-width: 800px;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 1rem 0;
-      max-width: 700px;
-    }
-    .cta-buttons a {
-      padding: 0.8rem 1.5rem;
-      margin: 0.5rem;
-      border: none;
-      text-decoration: none;
-      color: white;
-      background: #00723e;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .cta-buttons a:hover {
-      background: #005e34;
-    }
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .card {
-      background: #f8f8f8;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .card img {
-      max-width: 80px;
-      margin-bottom: 1rem;
-    }
-    .card h3 {
-      color: #00723e;
-      margin-bottom: 0.5rem;
-    }
-    .bg-light {
-      background: #f0f5f2;
-    }
-    footer {
-      background: #00723e;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .form {
-      background: #eef2f1;
-      padding: 2rem;
-      border-radius: 8px;
-      max-width: 600px;
-      margin: 2rem auto 0;
-    }
-    .form input, .form textarea {
-      width: 100%;
-      padding: 0.8rem;
-      margin: 0.5rem 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .form button {
-      background: #00723e;
-      color: white;
-      border: none;
-      padding: 1rem;
-      width: 100%;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .form button:hover {
-      background: #005e34;
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="aos.css">
 </head>
 <body>
-  <header>
-    <h1>Tus finanzas, tu tranquilidad</h1>
-    <p>Beneficios Promerica Costa Rica: Ahorra, protege y crece con respaldo sólido</p>
-    <div class="cta-buttons">
-      <a href="#productos">Abrir cuenta</a>
-      <a href="#contacto">Solicitar asesoría</a>
+
+  <nav class="navbar">
+    <div class="logo">🌿 Promerica Beneficios</div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Impulsamos tu Futuro Financiero 💼</h1>
+      <p>Soluciones integrales para personas y empresas en Costa Rica.</p>
+      <div class="buttons">
+        <a href="#servicios" class="btn-primary">Ver Servicios</a>
+        <a href="#nosotros" class="btn-secondary">Conócenos</a>
+      </div>
     </div>
   </header>
 
-  <section id="productos">
-    <h2>Productos Financieros</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://img.icons8.com/fluency/96/money.png" alt="Plan METAS">
-        <h3>Plan METAS</h3>
-        <p>Ahorra desde 4 hasta 36 meses en colones o dólares, con intereses atractivos.</p>
+  <section class="section servicios" id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="card-grid">
+      <div class="card" data-aos="fade-up">
+        <div class="icon">🏦</div>
+        <h3>Cuentas y Beneficios</h3>
+        <p>Ahorro, corriente y cuentas empresariales seguras y flexibles.</p>
       </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/money-bag.png" alt="Ahorro Alto Rendimiento">
-        <h3>Ahorro Alto Rendimiento</h3>
-        <p>Gana más intereses desde $100 sin penalizaciones por retiro.</p>
+      <div class="card" data-aos="fade-up">
+        <div class="icon">💳</div>
+        <h3>Bolsas</h3>
+        <p>Tarjetas de crédito y débito con beneficios exclusivos y cashback.</p>
       </div>
-      <div class="card">
-        <div style="font-size: 64px; margin-bottom: 1rem;">🌱</div>
-        <h3>Créditos Verdes</h3>
-        <p>Financia tu futuro con energía limpia, movilidad eléctrica y agricultura sostenible.</p>
+      <div class="card" data-aos="fade-up">
+        <div class="icon">💰</div>
+        <h3>Créditos</h3>
+        <p>Financiamiento para vivienda, auto, estudio o negocio.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="bg-light">
-    <h2>¿Por qué elegir Promerica?</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://img.icons8.com/office/96/earth-planet.png" alt="Sostenibilidad">
-        <h3>Sostenibilidad</h3>
-        <p>Promovemos proyectos alineados con los Objetivos de Desarrollo Sostenible.</p>
+      <div class="card" data-aos="fade-up">
+        <div class="icon">📈</div>
+        <h3>Inversiones</h3>
+        <p>Fondos de inversión y certificados con atractivos rendimientos.</p>
       </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/smartphone-tablet.png" alt="Herramientas Digitales">
-        <h3>Herramientas Digitales</h3>
-        <p>Realiza tus gestiones desde cualquier lugar con nuestra app y banca en línea.</p>
+      <div class="card" data-aos="fade-up">
+        <div class="icon">📲</div>
+        <h3>Bolsa Digital</h3>
+        <p>Control total desde tu app: Beneficios, Informacion y más.</p>
       </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/classroom.png" alt="Educación Financiera">
-        <h3>Educación Financiera</h3>
-        <p>Capacitaciones, tips y guías para personas, empresas y pymes.</p>
+      <div class="card" data-aos="fade-up">
+        <div class="icon">🌱</div>
+        <h3>Responsabilidad</h3>
+        <p>Comprometidos con la sostenibilidad y la inclusión financiera.</p>
       </div>
     </div>
   </section>
 
-  <section class="benefits">
-    <h2>Beneficios Exclusivos Promerica</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://img.icons8.com/emoji/96/star-emoji.png" alt="Promociones">
-        <h3>Promociones Especiales</h3>
-        <p>Accede a descuentos únicos en comercios aliados a nivel nacional e internacional.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/beach.png" alt="Viajes">
-        <h3>Beneficios en Viajes</h3>
-        <p>Acumula millas, accede a seguros de viaje y disfruta experiencias únicas.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/online-support.png" alt="Atención personalizada">
-        <h3>Atención Personalizada</h3>
-        <p>Soporte 24/7, ejecutivos financieros y atención preferencial en nuestras sucursales.</p>
-      </div>
-    </div>
+  <section class="section nosotros" id="nosotros" data-aos="fade-up">
+    <h2>Sobre Nosotros</h2>
+    <p>Promerica Beneficios Costa Rica forma parte del Grupo Promerica, con presencia en 9 países y más de 25 años de experiencia. Apoyamos a nuestros clientes con soluciones ágiles, confiables e innovadoras.</p>
   </section>
 
-  <section id="contacto">
-    <h2>Contáctanos</h2>
-    <div class="form">
-      <input type="text" placeholder="Nombre completo">
-      <input type="email" placeholder="Correo electrónico">
-      <textarea placeholder="Mensaje o consulta"></textarea>
-      <button type="submit">Enviar</button>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Beneficios Promerica Costa Rica. Todos los derechos reservados.</p>
+  <footer class="footer" id="contacto" data-aos="fade-up">
+    <h3>Contáctanos</h3>
+    <p>📞 Teléfono: +506 2519-8090</p>
+    <p>✉️ Email: info@promericabeneficios.cr</p>
+    <p>&copy; 2025 Promerica Beneficios</p>
   </footer>
+
+  <script src="aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 </body>
 </html>
